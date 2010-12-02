@@ -1,0 +1,10 @@
+---
+layout: post
+title: Setting up my code-related blog with jekyll
+---
+
+h2. {{ page.title }}
+
+Finally, I'm getting around to setting up my own code-related blog. Ever since I got this domain, it was my wish to setup a blog only for technical matters, as my "personal blog":http://blog.vamsee.in tends to be very eclectic in its' contents and it could be a distraction. After reading Tom Preston-Werner's article "Blogging Like a Hacker":http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html, I thought setting it up with "jekyll":http://github.com/mojombo/jekyll could be a good fit for my DIY sensibilities.
+
+There is a little bit of learning curve with respect to "Textile":http://textile.thresholdstate.com/ and "Liquid":http://www.liquidmarkup.org/, but both are quite easy to get up to speed with. The design part is a different ballgame, though. Learning CSS could be quite frustrating (especially for coders), but very much worth the effort. I hope to embellish the site a bit more in the coming days, and I'm hoping it won't look so barebones then :)

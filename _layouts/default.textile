@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+  <head>
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Vamsee Kanakala" />
+    <link href="http://feeds.feedburner.com/vamdev" rel="alternate" title="Musings in Code" type="application/atom+xml" />
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->   
+  </head>
+  <body>
+    <div class="container">
+      {{ content }}
+      <div id="footer" class="span-24 last">
+	&copy; 2009-2010 {{ page.author }}
+      </div>
+    </div>
+  </body>
+</html>

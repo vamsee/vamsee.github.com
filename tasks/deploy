@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+jekyll && rsync -e "ssh -p 42424" -avz --delete _site/ dev.vamsee.in:dev.vamsee.in

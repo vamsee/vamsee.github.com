@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Odds and ends: Node.js, zile, Mirah"
+---
+
+h2. {{ page.title }}
+
+Ah, so I'm back at it. The last time I heard about "Node.js":http://nodejs.org, I studiously ignored it, coz I wanted to learn Erlang first. But other things have intervened in the meantime, like "Yahoo! Open Hack India":http://openhackindia.eventbrite.com/ in which they explicitly mentioned Node.js is a framework of choice/interest. Well, I thought I should give it a thought. 
+
+Didn't actually end up using Node.js for the event, as I went with a friend's idea, but after reading up quite a bit and trying out some basic things, I'm sufficiently intrigued to give it a shot. If you're trying it out, though nowhere explicitly mentioned, you would do well to install "npm":http://npmjs.org - an already robust package manager for Node.js libraries. I will document more about the ecosystem as I work more with it.
+
+Apart from that, I found a few nice things today. "zile":http://www.gnu.org/software/zile/ a handy emacs-like replacement for those little bits of editing on the server that you normally fire up vim or nano for. Also, the "mirah":http://www.mirah.org/ programming language (formerly called Duby) an off shoot of the JRuby project. While the latter concentrates on compiling pure Ruby to JVM bytecode, Duby is a "Ruby-like" language, which directly outputs to JVM bytecode. That's quite interesting in a lot of ways. Listen to the author in the screencast on the homepage, to know more.

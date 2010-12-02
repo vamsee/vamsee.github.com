@@ -1,0 +1,14 @@
+---
+layout: post
+title: A tiny erlang shell tip
+---
+
+h2. {{ page.title }}
+
+I've been at Erlang again, and I found this handy tip that sets cwd to your erlang code directory. Joe Armstrong's book only gives the windows tip, but if you're on Linux, you want to put the following in ~/.erlang:
+
+{% highlight erlang %}
+   c:cd("/home/projects/erlcode" ).
+{% endhighlight %}
+
+Hope that helps!

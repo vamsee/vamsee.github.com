@@ -1,0 +1,12 @@
+---
+layout: post
+title: EzWebReader - My ADC2 submission
+---
+
+h2. {{ page.title }}
+
+Now that ADC2 has passed us by, I've changed the special package name they require, and setup a separate one and uploaded my submission to the general Android Market. Try searching for 'webreader' and you should find EzWebReader. You can find more details about this app in the site I've setup "here":http://webreader.vamsee.in/. The original name is WebReader, but the Market doesn't accept the name with which you've submitted it to ADC2, so I had to add the 'Ez' in front.
+
+This is probably the easiest and smallest Android app ever - I literally had just one week to develop and submit, so I had to think of something simple yet truly useful. WebReader just adds a bookmarklet that cleans up a webpage that you are viewing in the browser, almost instantly. So I hope inspite of it being simple to develop, it will be truly useful for many folks. I already use it on a regular basis. If you have an Android phone, you should definitely check it out. Otherwise, check out the site and tell me what you think :)
+
+*UPDATE*: Looks like we're off to a good start. Android Market publish page shows EzWebReader has 62 'active' installs, with two 5-star ratings. Not bad, eh? :)

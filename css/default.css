@@ -1,0 +1,104 @@
+body {
+    font-size: 90%;
+}
+
+a:hover {
+    color: black;
+}
+ 
+a:visited {
+    color: #a0a;
+}
+
+#header {
+    margin-top: 1.5em;
+}
+
+#header h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+#header h1 a:hover {
+    background-color: #e8e8e8;
+}
+
+#nav {
+    font-size: 1.5em;
+    text-align: right;
+    color: #000;
+}
+
+#nav ul {
+    margin: 0;
+    float: right;
+    padding-top: 0.25em;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #666;
+}
+
+#nav li {
+    display: inline;
+    padding-right: 1em;
+}
+
+ul.posts {
+    list-style-type: none;
+    margin-bottom: 2em;
+    margin-left: 0;
+}
+ 
+ul.posts li {
+    line-height: 1.75em;
+}
+
+ul.posts li a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+ul.posts li a:hover {
+    text-decoration: underline;
+}
+ 
+.date {
+    clear: left;
+}
+
+.small {
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+
+.day {
+    float: left;
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+.month {
+    padding: 0;
+    margin: 0;
+}
+
+.year {
+    padding: 0;
+    margin: 0;
+}
+
+#main, #post {
+    padding-top: 1em;
+}
+
+#footer {
+    color: #ccc;
+    font-size: 75%;
+    border-top-style: solid; 
+    border-top-color: gray; 
+    border-top-width: 2px; 
+    text-align: center;
+}

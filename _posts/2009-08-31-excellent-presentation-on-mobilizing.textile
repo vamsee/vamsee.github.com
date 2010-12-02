@@ -1,0 +1,10 @@
+---
+layout: post
+title: Excellent presentation on 'Mobilizing' Rails apps
+---
+
+h2. {{ page.title }}
+
+Here is a very informative presentation on how to make your Rails app mobile-friendly: <a href="http://bit.ly/16gxa5">http://bit.ly/16gxa5</a>. I have been using an Android phone for a while, and I can see how frustrating it is to view sites that are not optimized for mobile use. I've already submitted a entry to the ADC that addresses precisely this problem, but it's not perfect (more on this soon). Of course, the best way is the sites do it themselves.
+
+*UPDATE:* Looks like something very similar: "http://www.jqtouch.com/":http://www.jqtouch.com/ 

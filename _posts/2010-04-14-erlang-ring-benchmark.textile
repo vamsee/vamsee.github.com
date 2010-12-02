@@ -1,0 +1,65 @@
+---
+layout: post
+title: Erlang Ring Benchmark (sort of)
+---
+
+h2. {{ page.title }}
+
+Another bit of time to hack at Erlang again. I've been breaking my head to write this seemingly simple exercise in _Programming Erlang_ by Joe Armstrong. The problem statement goes like this:
+
+bq. Write a ring benchmark. Create N processes in a ring. Send a message round the ring M times so that a total of N * M messages get sent. Time how long this takes for different values of N and M.
+
+I don't know if it's because of the functional aspect or if I'm just plain dumb, it took me quite some time to come up with the solution. A partial one, at that:
+
+{% highlight erlang %}
+-module(ring_bmark).
+-export([start/3]).
+
+start(Msg, N, M) ->
+    Pid = spawn(fun() ->
+                        transmitter() end),
+    Pid ! { Msg, {nodes, N}, {times, M}}.
+
+transmitter() ->
+    receive
+        {Msg, {nodes, N}, {times, M}} ->
+            io:format("Setting up transmitter with ~p nodes...", [N]),
+            To = setup_ring(self(), 1, N),
+            io:format("done. ~nI should send to ~p ~p times~n", [To, M]),
+            io:format("~p: Sending ~p to ~p~n", [self(), Msg, To]),
+            for(To, self(), Msg, 1, M),
+            transmitter();
+        {From, Msg} ->
+            io:format("~p: Received ~p from ~p, Stop!~n", [self(), Msg, From]),
+            transmitter();
+        die -> void
+    end.
+
+transponder(To) ->
+    receive
+        {From, Msg} ->
+            io:format("~p: Received ~p, from ~p, sending to ~p~n", 
+                      [self(), Msg, From, To]),
+            To ! {self(), Msg},
+            transponder(To);
+        die -> To ! die,
+               void
+    end.
+
+for(To, From, Msg, Max, Max) ->
+    To ! {From, Msg};
+for(To, From, Msg, I, Max) ->
+    To ! {From, Msg},
+    for(To, From, Msg, I+1, Max). 
+
+setup_ring(F, N, N) ->
+    spawn(fun() ->
+                  transponder(F) end);
+setup_ring(F, I, N) ->
+    setup_ring(spawn(fun() ->
+                             transponder(F) end), I+1, N).            
+{% endhighlight %}
+
+I'm still yet to figure out the benchmarking part. I'm not sure what the author means by "Time how long it takes for different values of N and M" - should I time the spawning time (like in an earlier example in the book) or time taken for all the messages to be passed around? If yes, how can I collate the time taken across all these message threads? 
+
+I have a feeling it's nowhere near elegant Erlang code either. Hopefully, I'll put up a much more complete/efficient solution as I get more familiar with the functional way of coding.
