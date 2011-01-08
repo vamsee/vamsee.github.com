@@ -4,7 +4,7 @@
   <head>
     <title>{{ page.title }}</title>
     <meta name="author" content="Vamsee Kanakala" />
-    <link href="http://feeds.feedburner.com/vamdev" rel="alternate" title="Musings in Code" type="application/atom+xml" />
+    <link href="http://feeds.feedburner.com/vamcode" rel="alternate" title="Musings in Code" type="application/atom+xml" />
     <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen, projection" />
