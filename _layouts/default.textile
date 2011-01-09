@@ -15,7 +15,7 @@
     <div class="container">
       {{ content }}
       <div id="footer" class="span-24 last">
-	&copy; 2009-2010 {{ page.author }}
+	&copy; 2011 {{ page.author }}
       </div>
     </div>
   </body>
